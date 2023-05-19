@@ -19,7 +19,9 @@ public class ControladorCompras {
             } else {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id,articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) " + "VALUES ('255','Red9', 1, 20000, 'Pistola Mauser Alemana (9mm)', 3, 8, 2, 2)"; // Sentencia SQL para hacer el INSERT
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                JOptionPane.showMessageDialog(null, "La pistola Red9 se ha añadido al inventario.");
+                //JOptionPane.showMessageDialog(null, "La pistola Red9 se ha añadido al inventario.");
+                ControladorAudios controlador = new ControladorAudios();
+                controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -44,7 +46,9 @@ public class ControladorCompras {
             } else {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id,articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) " + "VALUES ('256','Tmp', 1, 30000, 'Subfusil Compacto (9mm)', 5, 30, 1, 2)"; // Sentencia SQL para hacer el INSERT
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                JOptionPane.showMessageDialog(null, "La pistola Tmp se ha añadido al inventario.");
+                //JOptionPane.showMessageDialog(null, "La pistola Tmp se ha añadido al inventario.");
+                ControladorAudios controlador = new ControladorAudios();
+                controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -71,7 +75,9 @@ public class ControladorCompras {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id, articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) "
                         + "VALUES ('257', 'Escopeta Antidisturbios', 1, 35000, 'Escopeta Pesada (Cartuchos) ', 2, 7, 6, 1)";
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                JOptionPane.showMessageDialog(null, "La Escopeta Antidisturbios se ha añadido al inventario.");
+                //JOptionPane.showMessageDialog(null, "La Escopeta Antidisturbios se ha añadido al inventario.");
+                ControladorAudios controlador = new ControladorAudios();
+                controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -97,7 +103,9 @@ public class ControladorCompras {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id, articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) "
                         + "VALUES ('258', 'Rifle Francotirador', 1, 25000, 'Rifle de francotirador (7,62mm)',1, 5, 3, 1)";
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                JOptionPane.showMessageDialog(null, "El Rifle Francotirador se ha añadido al inventario.");
+                //JOptionPane.showMessageDialog(null, "El Rifle Francotirador se ha añadido al inventario.");
+                ControladorAudios controlador = new ControladorAudios();
+                controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -123,7 +131,9 @@ public class ControladorCompras {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id, articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) "
                         + "VALUES ('259', 'Lanzacohetes', 1, 300000, 'Mata de un tiro', 1, 1, 1000, 0)";
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                JOptionPane.showMessageDialog(null, "El Lanzacohetes se ha añadido al inventario.");
+                //JOptionPane.showMessageDialog(null, "El Lanzacohetes se ha añadido al inventario.");
+                ControladorAudios controlador = new ControladorAudios();
+                controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
