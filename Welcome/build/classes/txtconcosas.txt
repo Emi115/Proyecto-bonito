@@ -1,0 +1,85 @@
+
+
+package welcome;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+/**
+ *
+ * @author Emi
+ */
+public class copiarpegarcodigo {
+    // La tabla tiene registros
+    
+  /*
+  boolean illo;
+  illo=false;
+                
+      if (illo==true)
+        { 
+          System.out.println("Borrando registros de la base de datos...");
+        CreacionBaseDeDatos.eliminarRegistros();
+       }
+    public static void main(String[] args) {
+    
+     
+
+
+        // Realizar la conexion en la base de datos "re4"
+        Connection conn;
+        String urlBD = "jdbc:mysql://localhost:3306/re4";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(urlBD, "root", "");
+
+            Statement stmt = conn.createStatement();
+
+            // Verificar si la tabla está vacía
+            String countQuery = "SELECT COUNT(*) AS count FROM inventario_buhonero";
+            ResultSet countResult = stmt.executeQuery(countQuery);
+            countResult.next();
+            int rowCount = countResult.getInt("count");
+
+            if (rowCount == 0) {
+                // La tabla está vacía
+                System.out.println("La base de datos está vacía");
+                System.out.println("Insertando datos en la base de datos...");
+                
+                
+                CreacionBaseDeDatos.insertarDatos(); //si comento esto no me rellena la base de datos 
+                
+                
+            } else {
+                // La tabla tiene registros
+                System.out.println("La base de datos está llena");
+            }
+
+            // Realizar la consulta en la base de datos "re4"
+            String sql = "SELECT * FROM inventario_buhonero";
+            ResultSet rs = stmt.executeQuery(sql);
+            
+
+            while (rs.next()) 
+            {
+                System.out.println(rs.getInt("id") + " "
+                        + rs.getString("articulo") + " " 
+                        + rs.getInt("cantidad") + " " 
+                        + rs.getLong("pesetas") + " " 
+                        + rs.getString("descripcion") + " " 
+                        + rs.getInt("cadencia") + " " 
+                        + rs.getInt("capacidad") + " " 
+                        + rs.getInt("potencia") + " "
+                        + rs.getInt("recarga"));
+            }
+
+            stmt.close();
+            conn.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }*/
+}
