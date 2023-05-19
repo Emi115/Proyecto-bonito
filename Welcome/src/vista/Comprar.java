@@ -112,6 +112,7 @@ public class Comprar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1400, 800));
+        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1400, 800));
         jPanel1.setMinimumSize(new java.awt.Dimension(1400, 800));
@@ -436,12 +437,13 @@ public class Comprar extends javax.swing.JFrame {
             controlador.deducirDinero(cantidad);
             controlador.ComprarRed9();
         }
+        Utilidades.actualizarCartel(Cartel);
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
 
         controladorTablas.limpiarTabla();
 
         controladorTablas.cargarInventario("inventario_buhonero");
-        Utilidades.actualizarCartel(Cartel);
+        
     }//GEN-LAST:event_ComprarRed9ActionPerformed
 
     private void Red9InspeccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Red9InspeccionarActionPerformed

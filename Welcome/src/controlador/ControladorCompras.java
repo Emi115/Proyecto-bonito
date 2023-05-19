@@ -19,9 +19,9 @@ public class ControladorCompras {
             } else {
                 String sentenciaInsert = "INSERT INTO inventario_jugador (id,articulo, cantidad, pesetas, descripcion, cadencia, capacidad, potencia, recarga) " + "VALUES ('255','Red9', 1, 20000, 'Pistola Mauser Alemana (9mm)', 3, 8, 2, 2)"; // Sentencia SQL para hacer el INSERT
                 conexion.EjecutarUpdate(sentenciaInsert); // Ejecutar la sentencia de actualización
-                //JOptionPane.showMessageDialog(null, "La pistola Red9 se ha añadido al inventario.");
-                ControladorAudios controlador = new ControladorAudios();
-                controlador.gracias();
+                JOptionPane.showMessageDialog(null, "La pistola Red9 se ha añadido al inventario.");
+                //ControladorAudios controlador = new ControladorAudios();
+                //controlador.gracias();
             }
         } catch (SQLException ex) {
             ex.printStackTrace();

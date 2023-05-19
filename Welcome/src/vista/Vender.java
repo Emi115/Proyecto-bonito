@@ -89,6 +89,7 @@ public class Vender extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1400, 800));
         setMinimumSize(new java.awt.Dimension(1400, 800));
         setPreferredSize(new java.awt.Dimension(1400, 800));
+        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1400, 800));
         jPanel1.setMinimumSize(new java.awt.Dimension(1400, 800));

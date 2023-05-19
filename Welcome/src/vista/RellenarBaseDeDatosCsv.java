@@ -39,6 +39,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(900, 350));
         setMinimumSize(new java.awt.Dimension(900, 350));
         setPreferredSize(new java.awt.Dimension(900, 350));
+        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(800, 600));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 600));
