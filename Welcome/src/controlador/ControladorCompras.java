@@ -136,7 +136,7 @@ public class ControladorCompras {
         conexion.CerrarConexion(); // Cerrar la conexión a la base de datos
     }
 
-    public void deducirDinero(int cantidad) {
+    public void ReducirDinero(int cantidad) {
         conexion.Conectar(); // Conectar a la base de datos
 
         String sentenciaUpdate = "UPDATE dinero_jugador SET dinero = dinero - " + cantidad;
@@ -160,6 +160,7 @@ public class ControladorCompras {
                     //JOptionPane.showMessageDialog(null, "No tienes suficiente dinero para comprar este artículo.");
                     ControladorAudios controlador = new ControladorAudios();
                     controlador.nodinero();
+                    return false; // El jugador no tiene suficiente dinero para comprar
                 }
             }
         } catch (SQLException ex) {
@@ -171,4 +172,24 @@ public class ControladorCompras {
 
         return false; // El jugador no tiene suficiente dinero para comprar
     }
+
+    public boolean verificarExistenciaArticulo(String articulo) {
+        conexion.Conectar(); // Conectar a la base de datos
+
+        String sentenciaSelect = "SELECT COUNT(*) FROM inventario_jugador WHERE articulo = '" + articulo + "'";
+        try (ResultSet resultados = conexion.EjecutarSentencia(sentenciaSelect)) {
+            if (resultados.next() && resultados.getInt(1) > 0) {
+                return true; // El jugador tiene el artículo en su inventario
+            } else {
+                return false; // El jugador no tiene el artículo en su inventario
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error al verificar la existencia del artículo en el inventario.");
+            return false; // Error al verificar, asumimos que el jugador no tiene el artículo
+        } finally {
+            conexion.CerrarConexion(); // Cerrar la conexión a la base de datos
+        }
+    }
+
 }

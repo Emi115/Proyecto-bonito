@@ -432,14 +432,13 @@ public class Comprar extends javax.swing.JFrame {
     private void ComprarRed9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarRed9ActionPerformed
         int cantidad = 20000; // Cantidad a deducir del dinero del jugador
         ControladorCompras controlador = new ControladorCompras();
-        if (controlador.verificarDineroSuficiente(cantidad)) {
-            controlador.deducirDinero(cantidad);
+        if (controlador.verificarDineroSuficiente(cantidad) && !controlador.verificarExistenciaArticulo("Red9")) {
             controlador.ComprarRed9();
-        }
+            controlador.ReducirDinero(cantidad);
+        }else{JOptionPane.showMessageDialog(null, "No tengo disponible este producto");}
+
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
-
         controladorTablas.limpiarTabla();
-
         controladorTablas.cargarInventario("inventario_buhonero");
         Utilidades.actualizarCartel(Cartel);
     }//GEN-LAST:event_ComprarRed9ActionPerformed
@@ -484,14 +483,13 @@ public class Comprar extends javax.swing.JFrame {
     private void ComprarLanzacohetesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarLanzacohetesActionPerformed
         int cantidad = 300000; // Cantidad a deducir del dinero del jugador
         ControladorCompras controlador = new ControladorCompras();
-        if (controlador.verificarDineroSuficiente(cantidad)) {
-            controlador.deducirDinero(cantidad);
+        if (controlador.verificarDineroSuficiente(cantidad) && !controlador.verificarExistenciaArticulo("Lanzacohetes")) {
             controlador.ComprarLanzacohetes();
-        }
+            controlador.ReducirDinero(cantidad);
+        }else{JOptionPane.showMessageDialog(null, "No tengo disponible este producto");}
+
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
-
         controladorTablas.limpiarTabla();
-
         controladorTablas.cargarInventario("inventario_buhonero");
         Utilidades.actualizarCartel(Cartel);
     }//GEN-LAST:event_ComprarLanzacohetesActionPerformed
@@ -644,14 +642,15 @@ public class Comprar extends javax.swing.JFrame {
     private void ComprarFrancotiradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarFrancotiradorActionPerformed
         int cantidad = 25000; // Cantidad a deducir del dinero del jugador
         ControladorCompras controlador = new ControladorCompras();
-        if (controlador.verificarDineroSuficiente(cantidad)) {
-            controlador.deducirDinero(cantidad);
+        if (controlador.verificarDineroSuficiente(cantidad) && !controlador.verificarExistenciaArticulo("Rifle Francotirador")) {
             controlador.ComprarRifleFrancotirador();
+            controlador.ReducirDinero(cantidad);
+        } else {
+            JOptionPane.showMessageDialog(null, "No tengo disponible este producto");
         }
+
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
-
         controladorTablas.limpiarTabla();
-
         controladorTablas.cargarInventario("inventario_buhonero");
         Utilidades.actualizarCartel(Cartel);
     }//GEN-LAST:event_ComprarFrancotiradorActionPerformed
@@ -659,29 +658,31 @@ public class Comprar extends javax.swing.JFrame {
     private void ComprarTmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarTmpActionPerformed
         int cantidad = 30000; // Cantidad a deducir del dinero del jugador
         ControladorCompras controlador = new ControladorCompras();
-        if (controlador.verificarDineroSuficiente(cantidad)) {
-            controlador.deducirDinero(cantidad);
+        if (controlador.verificarDineroSuficiente(cantidad) && !controlador.verificarExistenciaArticulo("Tmp")) {
             controlador.ComprarTmp();
+            controlador.ReducirDinero(cantidad);
+        } else {
+            JOptionPane.showMessageDialog(null, "No tengo disponible este producto");
         }
+
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
-
         controladorTablas.limpiarTabla();
-
         controladorTablas.cargarInventario("inventario_buhonero");
         Utilidades.actualizarCartel(Cartel);
     }//GEN-LAST:event_ComprarTmpActionPerformed
 
     private void ComprarEscopetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComprarEscopetaActionPerformed
         int cantidad = 35000; // Cantidad a deducir del dinero del jugador
-        ControladorCompras controlador = new ControladorCompras();
-        if (controlador.verificarDineroSuficiente(cantidad)) {
-            controlador.deducirDinero(cantidad);
+       ControladorCompras controlador = new ControladorCompras();
+        if (controlador.verificarDineroSuficiente(cantidad) && !controlador.verificarExistenciaArticulo("Escopeta Antidisturbios")) {
             controlador.ComprarEscopetaAntidisturbios();
+            controlador.ReducirDinero(cantidad);
+        } else {
+            JOptionPane.showMessageDialog(null, "No tengo disponible este producto");
         }
+
         ControladorTablas controladorTablas = new ControladorTablas(Tabla);
-
         controladorTablas.limpiarTabla();
-
         controladorTablas.cargarInventario("inventario_buhonero");
         Utilidades.actualizarCartel(Cartel);
     }//GEN-LAST:event_ComprarEscopetaActionPerformed
