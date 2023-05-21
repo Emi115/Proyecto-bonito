@@ -113,7 +113,6 @@ public class Trucar extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1400, 800));
         setMinimumSize(new java.awt.Dimension(1400, 800));
         setPreferredSize(new java.awt.Dimension(1400, 800));
-        setResizable(false);
 
         jPanel1.setAlignmentX(0.0F);
         jPanel1.setAlignmentY(0.0F);

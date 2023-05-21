@@ -39,7 +39,6 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(900, 350));
         setMinimumSize(new java.awt.Dimension(900, 350));
         setPreferredSize(new java.awt.Dimension(900, 350));
-        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(800, 600));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 600));
@@ -56,7 +55,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
                 BorrarActionPerformed(evt);
             }
         });
-        jPanel1.add(Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 130, 30));
+        jPanel1.add(Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 170, 30));
 
         jLabel2.setText("Este añade registros desde el Csv a la base de datos del buhonero");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
@@ -76,7 +75,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
                 AñadirActionPerformed(evt);
             }
         });
-        jPanel1.add(Añadir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 100, 30));
+        jPanel1.add(Añadir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 180, 30));
 
         jLabel3.setText("Este boton añade desde otro Csv tesoros para vender al jugador");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
@@ -90,7 +89,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
                 AñadirTesorosActionPerformed(evt);
             }
         });
-        jPanel1.add(AñadirTesoros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 110, 30));
+        jPanel1.add(AñadirTesoros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 180, 30));
 
         borrarJugador.setText("Borrar Registros");
         borrarJugador.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +97,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
                 borrarJugadorActionPerformed(evt);
             }
         });
-        jPanel1.add(borrarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, 30));
+        jPanel1.add(borrarJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 170, 30));
 
         Dineroa0.setText("Dinero a 0");
         Dineroa0.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +105,7 @@ public class RellenarBaseDeDatosCsv extends javax.swing.JFrame {
                 Dineroa0ActionPerformed(evt);
             }
         });
-        jPanel1.add(Dineroa0, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, -1, -1));
+        jPanel1.add(Dineroa0, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
