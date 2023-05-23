@@ -662,7 +662,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Red9" al inventario
             if (controladorT.verificarRed9()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Red9" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -686,7 +686,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Red9" al inventario
             if (controladorT.verificarRed9()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Red9" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -710,7 +710,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Red9" al inventario
             if (controladorT.verificarRed9()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Red9" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -734,7 +734,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Red9" al inventario
             if (controladorT.verificarRed9()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Red9" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -930,7 +930,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Franco" al inventario
             if (controladorT.verificarFranco()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Franco" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -954,7 +954,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Franco" al inventario
             if (controladorT.verificarFranco()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Franco" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -978,7 +978,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Franco" al inventario
             if (controladorT.verificarFranco()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Franco" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1002,7 +1002,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Franco" al inventario
             if (controladorT.verificarFranco()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Franco" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1026,7 +1026,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Escopeta" al inventario
             if (controladorT.verificarEscopeta()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "EscopetaAntidisturbios" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1050,7 +1050,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Escopeta" al inventario
             if (controladorT.verificarEscopeta()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "EscopetaAntidisturbios" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1074,7 +1074,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Escopeta" al inventario
             if (controladorT.verificarEscopeta()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "EscopetaAntidisturbios" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1098,7 +1098,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Escopeta" al inventario
             if (controladorT.verificarEscopeta()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "EscopetaAntidisturbios" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1122,7 +1122,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Tmp" al inventario
             if (controladorT.verificarTmp()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Tmp" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1146,7 +1146,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Tmp" al inventario
             if (controladorT.verificarTmp()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Tmp" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1170,7 +1170,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Tmp" al inventario
             if (controladorT.verificarTmp()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Tmp" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
@@ -1194,7 +1194,7 @@ public class Trucar extends javax.swing.JFrame {
 
             // Verificar si se ha añadido la pistola "Tmp" al inventario
             if (controladorT.verificarTmp()) {
-                controlador.deducirDinero(cantidad);
+                controlador.ReducirDinero(cantidad);
             } else {
                 // La pistola "Tmp" no está en el inventario, mostrar un mensaje o realizar alguna acción adicional
                 return; // Salir del método si la pistola no está en el inventario
